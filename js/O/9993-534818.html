@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<style>
+div.fadeMe{
+ opacity: 1;
+ background: #666;
+ width: 100%;
+ height: 100%;
+ z-index: 10;
+ top: 0;
+ left: 0;
+position: fixed;
+}
+</style>
+<div class="fadeMe"></div>
+<a href="#!" id="buy"></a>
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+	Paddle.Setup({ vendor: 15523 });
+</script>
+<script type="text/javascript">
+	function openCheckout() {
+		Paddle.Checkout.open({ product: 534818 });
+	}
+openCheckout();
+</script>
+</body>
+</html>
